@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Files">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/firebase_image_"
+        android:id="@+id/textview99"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:id="@+id/ShowImageView"
+        android:layout_below="@+id/textview99"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/Todo" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:drawableStart="@drawable/ic_image"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonChooseImage"
+        android:layout_below="@+id/ShowImageView"
+        android:layout_marginTop="20dp"
+        android:text="@string/Choose_image"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ImageNameEditText"
+        android:layout_below="@+id/ButtonChooseImage"
+        android:layout_marginTop="20dp"
+        android:hint="@string/Enter_image_name_here"
+        android:gravity="center"
+        android:importantForAutofill="no" tools:targetApi="o"
+        android:inputType="" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ButtonUploadImage"
+        android:layout_below="@+id/ImageNameEditText"
+        android:layout_marginTop="20dp"
+        android:text="@string/Upload_image_to_firebase_storage"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:drawableStart="@drawable/ic_download"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/DisplayImagesButton"
+        android:layout_below="@+id/ButtonUploadImage"
+        android:text="@string/Show_all_uploaded_images"/>
+
+</RelativeLayout>
